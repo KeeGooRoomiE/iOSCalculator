@@ -26,7 +26,7 @@
                                     <color key="titleColor" systemColor="secondaryLabelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="DigitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5rB-ct-It8"/>
+                                    <action selector="digitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5rB-ct-It8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOb-Yk-NWY">
@@ -39,7 +39,7 @@
                                     <color key="titleColor" systemColor="secondaryLabelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="DigitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R8c-87-2QT"/>
+                                    <action selector="digitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R8c-87-2QT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPu-Kr-EvI">
@@ -52,7 +52,7 @@
                                     <color key="titleColor" systemColor="secondaryLabelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="DigitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fV2-Cd-0sH"/>
+                                    <action selector="digitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fV2-Cd-0sH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZO0-Kt-GYr">
@@ -65,7 +65,7 @@
                                     <color key="titleColor" systemColor="secondaryLabelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="DigitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Py-km-CQO"/>
+                                    <action selector="digitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Py-km-CQO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzM-zM-L0D">
@@ -78,20 +78,7 @@
                                     <color key="titleColor" systemColor="secondaryLabelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="DigitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N6P-y5-N3W"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFj-KS-RIl">
-                                <rect key="frame" x="0.0" y="367" width="102" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
-                                <state key="normal" title="7">
-                                    <color key="titleColor" systemColor="secondaryLabelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="DigitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zL3-9f-g4f"/>
+                                    <action selector="digitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N6P-y5-N3W"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMo-Mi-NBk">
@@ -104,7 +91,7 @@
                                     <color key="titleColor" systemColor="secondaryLabelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="DigitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VY9-S1-tg2"/>
+                                    <action selector="digitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VY9-S1-tg2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMM-br-8eI">
@@ -117,7 +104,7 @@
                                     <color key="titleColor" systemColor="secondaryLabelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="DigitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oDI-PD-v9N"/>
+                                    <action selector="digitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oDI-PD-v9N"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXw-Sg-vqm">
@@ -130,7 +117,7 @@
                                     <color key="titleColor" systemColor="secondaryLabelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="DigitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CI7-v4-9zs"/>
+                                    <action selector="digitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CI7-v4-9zs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gn3-95-QTP">
@@ -143,7 +130,7 @@
                                     <color key="titleColor" systemColor="secondaryLabelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="DigitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uUX-Ma-ATN"/>
+                                    <action selector="digitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uUX-Ma-ATN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPP-W6-51W">
@@ -156,7 +143,7 @@
                                     <color key="titleColor" systemColor="secondaryLabelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="ActionHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GkX-hz-pn2"/>
+                                    <action selector="operationHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GkX-hz-pn2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nID-hQ-1Sk">
@@ -169,7 +156,7 @@
                                     <color key="titleColor" systemColor="secondaryLabelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="ActionHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XCN-Nb-WdK"/>
+                                    <action selector="operationHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XCN-Nb-WdK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyr-oU-Fta">
@@ -182,7 +169,7 @@
                                     <color key="titleColor" systemColor="separatorColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="ActionHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0vM-CO-p9t"/>
+                                    <action selector="operationHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0vM-CO-p9t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8S-i6-84l">
@@ -195,7 +182,7 @@
                                     <color key="titleColor" systemColor="secondaryLabelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="ActionHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Lh-7e-Pnj"/>
+                                    <action selector="operationHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Lh-7e-Pnj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaA-9j-eHB">
@@ -208,7 +195,7 @@
                                     <color key="titleColor" systemColor="secondaryLabelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="ActionHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7V6-K7-4gB"/>
+                                    <action selector="operationHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7V6-K7-4gB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5U6-oG-m8D">
@@ -221,7 +208,7 @@
                                     <color key="titleColor" systemColor="secondaryLabelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="ActionHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0oV-83-xQ5"/>
+                                    <action selector="operationHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0oV-83-xQ5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdA-1b-e9A">
@@ -231,37 +218,25 @@
                                 <color key="textColor" systemColor="secondarySystemFillColor"/>
                                 <color key="highlightedColor" systemColor="tertiarySystemBackgroundColor"/>
                             </label>
-                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="900090" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ra0-ao-s8j">
-                                <rect key="frame" x="20" y="44" width="42" height="57"/>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFj-KS-RIl">
+                                <rect key="frame" x="0.0" y="367" width="102" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaF-Ej-47M">
-                                <rect key="frame" x="20" y="80" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xc3-FI-3is">
-                                <rect key="frame" x="20" y="101" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" systemColor="secondaryLabelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="digitsHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mDk-Vr-9SR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="actionlabel" destination="xc3-FI-3is" id="4nQ-3G-UIf"/>
-                        <outlet property="prevnumlabel" destination="Ra0-ao-s8j" id="kxy-vv-UJs"/>
-                        <outlet property="result" destination="BdA-1b-e9A" id="MYy-Zz-7ee"/>
-                        <outlet property="screennumlabel" destination="UaF-Ej-47M" id="JpQ-4p-0uu"/>
+                        <outlet property="resultLbl" destination="BdA-1b-e9A" id="MYy-Zz-7ee"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

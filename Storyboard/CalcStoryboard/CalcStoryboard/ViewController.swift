@@ -7,136 +7,115 @@
 
 import UIKit
 
+enum mathOperations: Int {
+    case ac = 10
+    case equals = 11
+    case plus = 12
+    case minus = 13
+    case div = 14
+    case mod = 15
+}
+
 class ViewController: UIViewController {
 
-    var ScreenNum:Double = 0
-    var PrevNum:Double = 0
-    var isAction:Bool = false;
-    var actionType:Int = -1;
+    var currentNumber: Double = 0
+    var previousNumber: Double = 0
+    var isMathOperation: Bool = false;
+    var operationType:Int = -1;
+    
+    @IBOutlet weak var resultLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-    @IBOutlet weak var result: UILabel!
-    @IBOutlet weak var prevnumlabel: UILabel!
-    @IBOutlet weak var screennumlabel: UILabel!
-    @IBOutlet weak var actionlabel: UILabel!
     
-    @IBAction func DigitsHandler(_ sender: UIButton) {
+    //захват кнопок с цифрами
+    @IBAction func digitsHandler(_ sender: UIButton) {
         
-        if isAction {
-            //if action was maded
-            result.text = String(sender.tag)
-            isAction = false
-            ScreenNum = Double(result.text!)!
+        if isMathOperation {
+            resultLbl.text = String(sender.tag)
+            isMathOperation = false
+            currentNumber = Double(resultLbl.text!)!
         } else {
-            //normal behaviour
-            result.text = result.text! + String(sender.tag)
-            ScreenNum = Double(result.text!)!
+            resultLbl.text = resultLbl.text! + String(sender.tag)
+            currentNumber = Double(resultLbl.text!)!
         }
-        UpdateDebugLabels()
     }
-    
-    @IBAction func ActionHandler(_ sender: UIButton) {
-        //handle actions
-        PrevNum = ScreenNum//Double(result.text!)!
-        
-        if result.text != "" {
+    //захват кнопок с операциями
+    @IBAction func operationHandler(_ sender: UIButton) {
+        if resultLbl.text != "" {
             //allow only if label not empty
             switch sender.tag {
-            case 10:
-                //AC button
-                isAction=false
-                HandleClear()
+            case mathOperations.ac.rawValue:
+                isMathOperation = false
+                clearResultFieldAndAction()
                 break;
-            case 11:
-                //equals button
-                isAction=true
-                HandleEquals()
+            case mathOperations.equals.rawValue:
+                isMathOperation = true
+                handleEquals()
                 break;
-            case 12:
-                //0:plus button
-                //if isAction {HandleEquals()}
-                isAction = true
-                result.text="+"
-                actionType=0
+            case mathOperations.plus.rawValue:
+                previousNumber = currentNumber
+                isMathOperation = true
+                resultLbl.text = "+"
+                operationType = 12
                 break;
-            case 13:
-                //minus button
-                //if isAction {HandleEquals()}
-                isAction = true
-                result.text="-"
-                actionType=1
+            case mathOperations.minus.rawValue:
+                previousNumber = currentNumber
+                isMathOperation = true
+                resultLbl.text = "-"
+                operationType = 13
                 break;
-            case 14:
-                //div button
-                if (PrevNum == 0 || ScreenNum == 0) {
-                    HandleClear()
-                    result.text = "Gotcha!"
+            case mathOperations.div.rawValue:
+                previousNumber = currentNumber
+                if (previousNumber == 0 || currentNumber == 0) {
+                    clearResultFieldAndAction()
+                    resultLbl.text = "Gotcha!"
                     break;
                 }
-                //if isAction {HandleEquals()}
-                isAction = true
-                result.text="/"
-                actionType=2
+                isMathOperation = true
+                resultLbl.text = "/"
+                operationType = 14
                 break;
-            case 15:
-                //mod button
-                
-                //if isAction {HandleEquals()}
-                isAction = true
-                result.text="x"
-                actionType=3
+            case mathOperations.mod.rawValue:
+                previousNumber = currentNumber
+                isMathOperation = true
+                resultLbl.text = "x"
+                operationType = 15
                 break;
             default:
                 //handle issues
                 break;
             }
         }
-        UpdateDebugLabels()
     }
     
-    func HandleEquals() {
-        //handle pressing equals button
-        isAction = false
-        switch actionType {
-        case 0:
-            //plus
-            result.text = String(PrevNum+ScreenNum)
+    func handleEquals() {
+        switch operationType {
+        case mathOperations.plus.rawValue:
+            resultLbl.text = String(previousNumber + currentNumber)
             break;
-        case 1:
-            //minus
-            result.text = String(PrevNum-ScreenNum)
+        case mathOperations.minus.rawValue:
+            resultLbl.text = String(previousNumber - currentNumber)
             break;
-        case 2:
-            //div
-            result.text = String(PrevNum/ScreenNum)
+        case mathOperations.div.rawValue:
+            resultLbl.text = String(previousNumber / currentNumber)
             break;
-        case 3:
-            //mod
-            result.text = String(PrevNum*ScreenNum)
+        case mathOperations.mod.rawValue:
+            resultLbl.text = String(previousNumber * currentNumber)
             break;
         default:
-            result.text = String(ScreenNum)
+            resultLbl.text = String(currentNumber)
             break;
         }
         //actionType = -1
     }
     
-    func HandleClear() {
-        result.text = ""
-        ScreenNum = 0
-        PrevNum = 0
-        actionType = -1
+    func clearResultFieldAndAction() {
+        resultLbl.text = ""
+        currentNumber = 0
+        previousNumber = 0
+        operationType = -1
     }
-    
-    func UpdateDebugLabels() {
-        prevnumlabel.text = String(PrevNum)
-        screennumlabel.text = String(ScreenNum)
-        actionlabel.text = String(actionType)
-    }
-
 }
 
